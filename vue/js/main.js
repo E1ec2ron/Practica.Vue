@@ -24,5 +24,15 @@ let app = new Vue ({
 
     },
 
+    methods: {
+        addToCart() {
+            this.cart += 1
+        },
+        updateProduct(index) {
+            this.selectedVariant = index;
+            console.log(index);
+        }
+    },
+
 
 });
